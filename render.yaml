@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: longevie-deck
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DECK_PASSWORD
+        sync: false
